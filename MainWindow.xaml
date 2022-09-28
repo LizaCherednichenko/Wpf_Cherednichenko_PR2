@@ -1,23 +1,24 @@
-﻿<Window x:Class="Wpf_Cherednichenko_PR2.MainWindow"
+﻿<Window x:Name="Window1" x:Class="Wpf_Cherednichenko_PR2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Cherednichenko_PR2"
         mc:Ignorable="d"
-        Title="Cherednichenko" Height="450" Width="800">
+        Title="Cherednichenko" Height="450" Width="800" Background="White">
     <Grid>
-        <Menu Background="White" BorderBrush="Navy" BorderThickness="1">
+        <Menu Background="White" BorderBrush="Black" BorderThickness="1" Margin="0,0,576,389">
             <MenuItem Header="Фон">
-                <MenuItem x:Name="MenuRed" Header="Красный"/>
-                <MenuItem x:Name="MenuGreen" Header="Зеленый"/>
-                <MenuItem x:Name="MenuBlue" Header="Синий"/>
-                <MenuItem x:Name="MenuViolet" Header="Фиолетовый"/>
-                <MenuItem x:Name="MenuOrange" Header="Оранжевый"/>
+                <MenuItem x:Name="MenuRed" Header="Красный" Click="MenuRed_Click"/>
+                <MenuItem x:Name="MenuGreen" Header="Зеленый" Click="MenuGreen_Click"/>
+                <MenuItem x:Name="MenuBlue" Header="Синий" Click="MenuBlue_Click"/>
+                <MenuItem x:Name="MenuViolet" Header="Фиолетовый" Click="MenuViolet_Click"/>
+                <MenuItem x:Name="MenuOrange" Header="Оранжевый" Click="MenuOrange_Click"/>
+                <MenuItem x:Name="MenuWhite" Header="Белый" Click="MenuWhite_Click"/>
             </MenuItem>
-            <MenuItem x:Name="MenuRazr" Header="О разработчике">
+            <MenuItem x:Name="MenuRazr" Header="О разработчике" Click="MenuRazr_Click">
             </MenuItem>
-            <MenuItem x:Name="MenuClose" Header="Закрыть">
+            <MenuItem x:Name="MenuClose" Header="Закрыть" Click="MenuClose_Click">
             </MenuItem>
         </Menu>
     </Grid>

@@ -24,5 +24,45 @@ namespace Wpf_Cherednichenko_PR2
         {
             InitializeComponent();
         }
+
+        private void MenuClose_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void MenuRed_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Red;
+        }
+
+        private void MenuGreen_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Green;
+        }
+
+        private void MenuBlue_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Blue;
+        }
+
+        private void MenuViolet_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Violet;
+        }
+
+        private void MenuOrange_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Orange;
+        }
+
+        private void MenuWhite_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.White;
+        }
+
+        private void MenuRazr_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("О разработчике:" + Environment.NewLine + "студентка 402 группы ИСП" + Environment.NewLine + "Чередниченко Елизавета");
+        }
     }
 }
