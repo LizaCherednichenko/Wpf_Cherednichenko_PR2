@@ -104,5 +104,115 @@ namespace Wpf_Cherednichenko_PR2
         {
             Environment.Exit(0);
         }
+
+        private void MenuItem_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Выбор цвета фона";
+        }
+
+        private void MenuItem_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void MenuRazr_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Информация о разработчике программы";
+        }
+
+        private void MenuRazr_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void MenuClose_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Закрытие программы";
+        }
+
+        private void MenuClose_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void TBRed_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Установка красного фона";
+        }
+
+        private void TBRed_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void TBGreen_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Установка зеленого фона";
+        }
+
+        private void TBGreen_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void TBBlue_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Установка синего фона";
+        }
+
+        private void TBBlue_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void TBViolet_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Установка фиолетового фона";
+        }
+
+        private void TBViolet_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void TBOrange_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Установка оранжевого фона";
+        }
+
+        private void TBOrange_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void TBWhite_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Установка белого фона";
+        }
+
+        private void TBWhite_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void TBRazr_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Информация о разработчике программы";
+        }
+
+        private void TBRazr_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void TBClose_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Закрытие программы";
+        }
+
+        private void TBClose_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
     }
 }
