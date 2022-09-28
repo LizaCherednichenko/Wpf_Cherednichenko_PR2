@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Cherednichenko_PR2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Cherednichenko" Height="450" Width="800">
     <Grid>
-        
+        <Menu Background="White" BorderBrush="Navy" BorderThickness="1">
+            <MenuItem Header="Фон">
+                <MenuItem x:Name="MenuRed" Header="Красный"/>
+                <MenuItem x:Name="MenuGreen" Header="Зеленый"/>
+                <MenuItem x:Name="MenuBlue" Header="Синий"/>
+                <MenuItem x:Name="MenuViolet" Header="Фиолетовый"/>
+                <MenuItem x:Name="MenuOrange" Header="Оранжевый"/>
+            </MenuItem>
+            <MenuItem x:Name="MenuRazr" Header="О разработчике">
+            </MenuItem>
+            <MenuItem x:Name="MenuClose" Header="Закрыть">
+            </MenuItem>
+        </Menu>
     </Grid>
 </Window>
