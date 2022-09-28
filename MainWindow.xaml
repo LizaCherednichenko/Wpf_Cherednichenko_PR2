@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Cherednichenko" Height="450" Width="800" Background="White">
     <Grid>
-        <Menu Background="White" BorderBrush="Black" BorderThickness="1" Margin="0,0,576,389">
-            <MenuItem Header="Фон">
+        <Menu Background="White" BorderThickness="1" Margin="0,0,576,383">
+            <MenuItem Header="Фон" Height="26">
                 <MenuItem x:Name="MenuRed" Header="Красный" Click="MenuRed_Click"/>
                 <MenuItem x:Name="MenuGreen" Header="Зеленый" Click="MenuGreen_Click"/>
                 <MenuItem x:Name="MenuBlue" Header="Синий" Click="MenuBlue_Click"/>
@@ -16,10 +16,23 @@
                 <MenuItem x:Name="MenuOrange" Header="Оранжевый" Click="MenuOrange_Click"/>
                 <MenuItem x:Name="MenuWhite" Header="Белый" Click="MenuWhite_Click"/>
             </MenuItem>
-            <MenuItem x:Name="MenuRazr" Header="О разработчике" Click="MenuRazr_Click">
+            <MenuItem x:Name="MenuRazr" Header="О разработчике" Click="MenuRazr_Click" Height="26">
             </MenuItem>
-            <MenuItem x:Name="MenuClose" Header="Закрыть" Click="MenuClose_Click">
+            <MenuItem x:Name="MenuClose" Header="Закрыть" Click="MenuClose_Click" Height="26">
             </MenuItem>
         </Menu>
+
+        <ToolBar Margin="216,0,5,383">
+            <Button x:Name="TBRed" Content="Красный фон" Click="TBRed_Click"/>
+            <Button x:Name="TBGreen" Content="Зеленый фон" Click="TBGreen_Click"/>
+            <Button x:Name="TBBlue" Content="Синий фон" Click="TBBlue_Click"/>
+            <Button x:Name="TBViolet" Content="Фиолетовый фон" Click="TBViolet_Click"/>
+            <Button x:Name="TBOrange" Content="Оранжевый фон" Click="TBOrange_Click"/>
+            <Button x:Name="TBWhite" Content="Белый фон" Click="TBWhite_Click"/>
+            <Separator/>
+            <Button x:Name="TBRazr" Content="О разработчике" Click="TBRazr_Click"/>
+            <Separator/>
+            <Button x:Name="TBClose" Content="Закрыть" Click="TBClose_Click"/>
+        </ToolBar>
     </Grid>
 </Window>

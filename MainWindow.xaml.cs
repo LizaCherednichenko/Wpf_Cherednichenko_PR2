@@ -64,5 +64,45 @@ namespace Wpf_Cherednichenko_PR2
         {
             MessageBox.Show("О разработчике:" + Environment.NewLine + "студентка 402 группы ИСП" + Environment.NewLine + "Чередниченко Елизавета");
         }
+
+        private void TBRed_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Red;
+        }
+
+        private void TBGreen_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Green;
+        }
+
+        private void TBBlue_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Blue;
+        }
+
+        private void TBViolet_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Violet;
+        }
+
+        private void TBOrange_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.Orange;
+        }
+
+        private void TBWhite_Click(object sender, RoutedEventArgs e)
+        {
+            Window1.Background = Brushes.White;
+        }
+
+        private void TBRazr_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("О разработчике:" + Environment.NewLine + "студентка 402 группы ИСП" + Environment.NewLine + "Чередниченко Елизавета");
+        }
+
+        private void TBClose_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
