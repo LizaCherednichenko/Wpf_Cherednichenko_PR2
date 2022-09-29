@@ -5,13 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Wpf_Cherednichenko_PR2"
         mc:Ignorable="d"
-        Title="Графический редактор" Height="450" Width="800">
+        Title="Графический редактор" Height="450" Width="800" Background="#FFC5C5C5">
     <Grid >
         <Label x:Name="label1" Content="Цвет кисти" Height="28" VerticalAlignment="Top" Margin="0,-3,714,0"/>
         <ComboBox SelectedIndex="1" Margin="78,0,623,391">
-            <ComboBoxItem x:Name="CBRed" Content="Красный"/>
-            <ComboBoxItem x:Name="CBBlue" Content="Синий"/>
-            <ComboBoxItem x:Name="CBGreen" Content="Зеленый"/>
+            <ComboBoxItem x:Name="CBRed" Content="Красный" Background="White" Selected="CBRed_Selected"/>
+            <ComboBoxItem x:Name="CBBlue" Content="Синий" Selected="CBBlue_Selected"/>
+            <ComboBoxItem x:Name="CBGreen" Content="Зеленый" Selected="CBGreen_Selected"/>
         </ComboBox>
 
         <Label x:Name="label2" Content="Размер кисти" Height="28" VerticalAlignment="Top" Margin="203,-3,496,0"/>
@@ -20,7 +20,11 @@
         <Button x:Name="ButtonClean" Margin="10,30,746,353">
             <Image Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\1827954.png"></Image>
         </Button>
-        
-        
+
+        <InkCanvas x:Name="inccanvas1" Margin="51,33,50,28" Background="White">
+            <InkCanvas.DefaultDrawingAttributes>
+                <DrawingAttributes Color="Red" Height="50" Width="50"/>
+            </InkCanvas.DefaultDrawingAttributes>
+        </InkCanvas>
     </Grid>
 </Window>

@@ -23,5 +23,21 @@ namespace Wpf_Cherednichenko_PR2
         {
             InitializeComponent();
         }
+
+        
+        private void CBRed_Selected(object sender, RoutedEventArgs e)
+        {
+            inccanvas1.DefaultDrawingAttributes.Color = Colors.Red;
+        }
+
+        private void CBBlue_Selected(object sender, RoutedEventArgs e)
+        {
+            inccanvas1.DefaultDrawingAttributes.Color = Colors.Blue;
+        }
+
+        private void CBGreen_Selected(object sender, RoutedEventArgs e)
+        {
+            inccanvas1.DefaultDrawingAttributes.Color = Colors.Green;
+        }
     }
 }
