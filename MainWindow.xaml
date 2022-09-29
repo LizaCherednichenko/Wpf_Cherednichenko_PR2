@@ -29,8 +29,8 @@
             <Button x:Name="TBViolet" Content="Фиолетовый фон" Click="TBViolet_Click" MouseMove="TBViolet_MouseMove" MouseLeave="TBViolet_MouseLeave"/>
             <Button x:Name="TBOrange" Content="Оранжевый фон" Click="TBOrange_Click" MouseMove="TBOrange_MouseMove" MouseLeave="TBOrange_MouseLeave"/>
             <Button x:Name="TBWhite" Content="Белый фон" Click="TBWhite_Click" MouseMove="TBWhite_MouseMove" MouseLeave="TBWhite_MouseLeave"/>
-            <Separator/>
             <Button x:Name="TBRazr" Content="О разработчике" Click="TBRazr_Click" MouseMove="TBRazr_MouseMove" MouseLeave="TBRazr_MouseLeave"/>
+            <Separator/>
             <Separator/>
             <Button x:Name="TBClose" Content="Закрыть" Click="TBClose_Click" MouseMove="TBClose_MouseMove" MouseLeave="TBClose_MouseLeave"/>
         </ToolBar>
@@ -38,5 +38,14 @@
         <StatusBar x:Name="SB" DockPanel.Dock ="Bottom" Margin="0,384,0,0">
             <TextBlock x:Name="SbTb"/>
         </StatusBar>
+
+        <Button Content="Графический редактор" HorizontalAlignment="Left" Margin="289,69,0,0" VerticalAlignment="Top" Width="179" Height="46" BorderBrush="#FF6800FF" FontSize="14" FontWeight="Bold" Foreground="#FFAE00FF" MouseMove="Button_MouseMove" MouseLeave="Button_MouseLeave" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFD9E7" Offset="0"/>
+                    <GradientStop Color="#FFCCC2E6" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

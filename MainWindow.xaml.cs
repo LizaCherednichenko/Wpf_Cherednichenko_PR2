@@ -214,5 +214,21 @@ namespace Wpf_Cherednichenko_PR2
         {
             SbTb.Text = "";
         }
+
+        private void Button_MouseMove(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "Переход в графический редактор";
+        }
+
+        private void Button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            SbTb.Text = "";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+        }
     }
 }

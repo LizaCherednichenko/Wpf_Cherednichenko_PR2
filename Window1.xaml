@@ -1,0 +1,26 @@
+﻿<Window x:Name="GrRedact" x:Class="Wpf_Cherednichenko_PR2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Cherednichenko_PR2"
+        mc:Ignorable="d"
+        Title="Графический редактор" Height="450" Width="800">
+    <Grid >
+        <Label x:Name="label1" Content="Цвет кисти" Height="28" VerticalAlignment="Top" Margin="0,-3,714,0"/>
+        <ComboBox SelectedIndex="1" Margin="78,0,623,391">
+            <ComboBoxItem x:Name="CBRed" Content="Красный"/>
+            <ComboBoxItem x:Name="CBBlue" Content="Синий"/>
+            <ComboBoxItem x:Name="CBGreen" Content="Зеленый"/>
+        </ComboBox>
+
+        <Label x:Name="label2" Content="Размер кисти" Height="28" VerticalAlignment="Top" Margin="203,-3,496,0"/>
+        <Slider x:Name="slider1" Minimum="1" Maximum="100" Value="50" Margin="301,0,380,391"/>
+
+        <Button x:Name="ButtonClean" Margin="10,30,746,353">
+            <Image Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\1827954.png"></Image>
+        </Button>
+        
+        
+    </Grid>
+</Window>
