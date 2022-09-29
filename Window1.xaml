@@ -8,16 +8,16 @@
         Title="Графический редактор" Height="450" Width="800" Background="#FFC5C5C5">
     <Grid >
         <Label x:Name="label1" Content="Цвет кисти" Height="28" VerticalAlignment="Top" Margin="0,-3,714,0"/>
-        <ComboBox SelectedIndex="1" Margin="78,0,623,391">
+        <ComboBox SelectedIndex="4" Margin="78,0,623,391">
+            <ComboBoxItem x:Name="CBBlue" Content="Синий" Selected="CBBlue_Selected" />
             <ComboBoxItem x:Name="CBRed" Content="Красный" Background="White" Selected="CBRed_Selected"/>
-            <ComboBoxItem x:Name="CBBlue" Content="Синий" Selected="CBBlue_Selected"/>
             <ComboBoxItem x:Name="CBGreen" Content="Зеленый" Selected="CBGreen_Selected"/>
         </ComboBox>
 
         <Label x:Name="label2" Content="Размер кисти" Height="28" VerticalAlignment="Top" Margin="203,-3,496,0"/>
         <Slider x:Name="slider1" Minimum="1" Maximum="100" Value="50" Margin="301,0,380,391"/>
 
-        <Button x:Name="ButtonClean" Margin="10,30,746,353">
+        <Button x:Name="ButtonClean" Margin="10,30,746,353" Click="ButtonClean_Click">
             <Image Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\1827954.png"></Image>
         </Button>
 

@@ -39,5 +39,12 @@ namespace Wpf_Cherednichenko_PR2
         {
             inccanvas1.DefaultDrawingAttributes.Color = Colors.Green;
         }
+
+        private void ButtonClean_Click(object sender, RoutedEventArgs e)
+        {
+            inccanvas1.DefaultDrawingAttributes.Color = Colors.White;
+        }
+
+       
     }
 }
