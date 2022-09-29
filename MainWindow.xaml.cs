@@ -24,7 +24,8 @@ namespace Wpf_Cherednichenko_PR2
         {
             InitializeComponent();
         }
-
+       
+        //кнопки меню
         private void MenuClose_Click(object sender, RoutedEventArgs e)
         {
             Environment.Exit(0);
@@ -65,46 +66,7 @@ namespace Wpf_Cherednichenko_PR2
             MessageBox.Show("О разработчике:" + Environment.NewLine + "студентка 402 группы ИСП" + Environment.NewLine + "Чередниченко Елизавета");
         }
 
-        private void TBRed_Click(object sender, RoutedEventArgs e)
-        {
-            Window1.Background = Brushes.Red;
-        }
-
-        private void TBGreen_Click(object sender, RoutedEventArgs e)
-        {
-            Window1.Background = Brushes.Green;
-        }
-
-        private void TBBlue_Click(object sender, RoutedEventArgs e)
-        {
-            Window1.Background = Brushes.Blue;
-        }
-
-        private void TBViolet_Click(object sender, RoutedEventArgs e)
-        {
-            Window1.Background = Brushes.Violet;
-        }
-
-        private void TBOrange_Click(object sender, RoutedEventArgs e)
-        {
-            Window1.Background = Brushes.Orange;
-        }
-
-        private void TBWhite_Click(object sender, RoutedEventArgs e)
-        {
-            Window1.Background = Brushes.White;
-        }
-
-        private void TBRazr_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("О разработчике:" + Environment.NewLine + "студентка 402 группы ИСП" + Environment.NewLine + "Чередниченко Елизавета");
-        }
-
-        private void TBClose_Click(object sender, RoutedEventArgs e)
-        {
-            Environment.Exit(0);
-        }
-
+        //отображение надписей в строке состояния
         private void MenuItem_MouseMove(object sender, MouseEventArgs e)
         {
             SbTb.Text = "Выбор цвета фона";
@@ -225,10 +187,53 @@ namespace Wpf_Cherednichenko_PR2
             SbTb.Text = "";
         }
 
+        //кнопка открытия окна второго задания (графический редактор)
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Window1 window1 = new Window1();
             window1.Show();
         }
+
+        //кнопки на панели инструментов
+        private void TBRed_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Window1.Background = Brushes.Red;
+        }
+
+        private void TBGreen_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Window1.Background = Brushes.Green;
+        }
+
+        private void TBBlue_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Window1.Background = Brushes.Blue;
+        }
+
+        private void TBViolet_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Window1.Background = Brushes.Violet;
+        }
+
+        private void TBOrange_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Window1.Background = Brushes.Orange;
+        }
+
+        private void TBWhite_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Window1.Background = Brushes.White;
+        }
+
+        private void TBRazr_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show("О разработчике:" + Environment.NewLine + "студентка 402 группы ИСП" + Environment.NewLine + "Чередниченко Елизавета");
+        }
+
+        private void TBClose_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
     }
 }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Cherednichenko" Height="450" Width="800" Background="White">
     <Grid>
-        <Menu Background="White" BorderThickness="1" Margin="0,0,576,383">
+        <Menu Background="#FFB6B6B6" BorderThickness="1" Margin="0,0,576,383">
             <MenuItem Header="Фон" Height="26" MouseMove="MenuItem_MouseMove" MouseLeave="MenuItem_MouseLeave">
                 <MenuItem x:Name="MenuRed" Header="Красный" Click="MenuRed_Click"/>
                 <MenuItem x:Name="MenuGreen" Header="Зеленый" Click="MenuGreen_Click"/>
@@ -22,17 +22,35 @@
             </MenuItem>
         </Menu>
 
-        <ToolBar Margin="216,0,5,383">
-            <Button x:Name="TBRed" Content="Красный фон" Click="TBRed_Click" MouseMove="TBRed_MouseMove" MouseLeave="TBRed_MouseLeave"/>
-            <Button x:Name="TBGreen" Content="Зеленый фон" Click="TBGreen_Click" MouseMove="TBGreen_MouseMove" MouseLeave="TBGreen_MouseLeave"/>
-            <Button x:Name="TBBlue" Content="Синий фон" Click="TBBlue_Click" MouseMove="TBBlue_MouseMove" MouseLeave="TBBlue_MouseLeave"/>
-            <Button x:Name="TBViolet" Content="Фиолетовый фон" Click="TBViolet_Click" MouseMove="TBViolet_MouseMove" MouseLeave="TBViolet_MouseLeave"/>
-            <Button x:Name="TBOrange" Content="Оранжевый фон" Click="TBOrange_Click" MouseMove="TBOrange_MouseMove" MouseLeave="TBOrange_MouseLeave"/>
-            <Button x:Name="TBWhite" Content="Белый фон" Click="TBWhite_Click" MouseMove="TBWhite_MouseMove" MouseLeave="TBWhite_MouseLeave"/>
-            <Button x:Name="TBRazr" Content="О разработчике" Click="TBRazr_Click" MouseMove="TBRazr_MouseMove" MouseLeave="TBRazr_MouseLeave"/>
+        <ToolBar Margin="216,0,5,383" Background="#FFB6B6B6">
+            <Button>
+                <Image x:Name="TBRed" Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\red.png" MouseDown="TBRed_MouseDown" MouseMove="TBRed_MouseMove" MouseLeave="TBRed_MouseLeave"/>
+            </Button>
+            <Button>
+                <Image x:Name="TBGreen" Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\green.png" MouseDown="TBGreen_MouseDown" MouseLeave="TBGreen_MouseLeave" MouseMove="TBGreen_MouseMove"></Image>
+            </Button>
+            <Button>
+                <Image x:Name="TBBlue" Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\blue.png" MouseDown="TBBlue_MouseDown" MouseLeave="TBBlue_MouseLeave" MouseMove="TBBlue_MouseMove"></Image>
+            </Button>
+            <Button>
+                <Image x:Name="TBViolet" Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\violet.png" MouseDown="TBViolet_MouseDown" MouseLeave="TBViolet_MouseLeave" MouseMove="TBViolet_MouseMove"></Image>
+            </Button>
+            <Button>
+                <Image x:Name="TBOrange" Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\orange.png" MouseDown="TBOrange_MouseDown" MouseLeave="TBOrange_MouseLeave" MouseMove="TBOrange_MouseMove"></Image>
+            </Button>
+            <Button>
+                <Image x:Name="TBWhite" Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\white.png" MouseDown="TBWhite_MouseDown" MouseLeave="TBWhite_MouseLeave" MouseMove="TBWhite_MouseMove"></Image>
+            </Button>
             <Separator/>
             <Separator/>
-            <Button x:Name="TBClose" Content="Закрыть" Click="TBClose_Click" MouseMove="TBClose_MouseMove" MouseLeave="TBClose_MouseLeave"/>
+            <Button>
+                <Image x:Name="TBRazr" Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\razr.png" MouseDown="TBRazr_MouseDown" MouseLeave="TBRazr_MouseLeave" MouseMove="TBRazr_MouseMove"></Image>
+            </Button>
+            <Separator/>
+            <Separator/>
+            <Button>
+                <Image x:Name="TBClose" Width="15" Height="15" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\close.png" MouseDown="TBClose_MouseDown" MouseLeave="TBClose_MouseLeave" MouseMove="TBClose_MouseMove"></Image>
+            </Button>
         </ToolBar>
 
         <StatusBar x:Name="SB" DockPanel.Dock ="Bottom" Margin="0,384,0,0">
