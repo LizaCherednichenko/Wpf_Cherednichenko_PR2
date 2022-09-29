@@ -46,17 +46,11 @@ namespace Wpf_Cherednichenko_PR2
         }
 
         
-
-        private void slider1_DragOver(object sender, DragEventArgs e)
+        private void Slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            inccanvas1.DefaultDrawingAttributes.Width = slider1.Value;
-            inccanvas1.DefaultDrawingAttributes.Height = slider1.Value;
-        }
-
-        private void slider1_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            inccanvas1.DefaultDrawingAttributes.Width = slider1.Value;
-            inccanvas1.DefaultDrawingAttributes.Height = slider1.Value;
+            double value = Slider1.Value;
+            inccanvas1.DefaultDrawingAttributes.Width = value;
+            inccanvas1.DefaultDrawingAttributes.Height = value;
         }
     }
 }
