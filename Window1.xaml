@@ -15,7 +15,7 @@
         </ComboBox>
 
         <Label x:Name="label2" Content="Размер кисти" Height="28" VerticalAlignment="Top" Margin="203,-3,496,0"/>
-        <Slider x:Name="Slider1" Minimum="1" Maximum="100" Value="50" Margin="301,0,380,391" Height="28" VerticalAlignment="Bottom" ValueChanged="Slider1_ValueChanged"/>
+        <Slider x:Name="Slider1" Minimum="1" Maximum="100" Value="50" Margin="301,0,380,387" Height="22" VerticalAlignment="Bottom" ValueChanged="Slider1_ValueChanged"/>
 
         <Button x:Name="ButtonClean" Margin="10,30,746,353" Click="ButtonClean_Click">
             <Image Width="20" Height="20" Source="D:\ЧЕРЕДНИЧЕНКО 402\уп 02.02\image\1827954.png"></Image>

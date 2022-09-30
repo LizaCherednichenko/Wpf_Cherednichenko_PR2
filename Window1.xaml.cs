@@ -48,9 +48,9 @@ namespace Wpf_Cherednichenko_PR2
         
         private void Slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            double value = Slider1.Value;
-            inccanvas1.DefaultDrawingAttributes.Width = value;
-            inccanvas1.DefaultDrawingAttributes.Height = value;
+            //double value = Slider1.Value;
+            //inccanvas1.DefaultDrawingAttributes.Width = value;
+            //inccanvas1.DefaultDrawingAttributes.Height = value;
         }
     }
 }
