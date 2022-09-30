@@ -6,20 +6,34 @@
         xmlns:local="clr-namespace:Wpf_Cherednichenko_PR2"
         mc:Ignorable="d"
         Title="Cherednichenko" Height="450" Width="800" Background="White">
+
+    <Window.Resources>
+        <Style TargetType="MenuItem" x:Key="MI1">
+            <Setter Property="Background" Value="LightPink"/>
+            <Setter Property="Foreground" Value="BlueViolet"/>
+            <Setter Property="FontFamily" Value="Sitka Text"/>
+        </Style>
+        <Style TargetType="MenuItem" x:Key="MI2">
+            <Setter Property="Background" Value="CadetBlue"/>
+            <Setter Property="Foreground" Value="Blue"/>
+            <Setter Property="FontFamily" Value="Georgia"/>
+        </Style>
+    </Window.Resources>
+    
+    
     <Grid>
-        <Menu Background="#FFB6B6B6" BorderThickness="1" Margin="0,0,576,383">
-            <MenuItem Header="Фон" Height="26" MouseMove="MenuItem_MouseMove" MouseLeave="MenuItem_MouseLeave">
-                <MenuItem x:Name="MenuRed" Header="Красный" Click="MenuRed_Click"/>
-                <MenuItem x:Name="MenuGreen" Header="Зеленый" Click="MenuGreen_Click"/>
-                <MenuItem x:Name="MenuBlue" Header="Синий" Click="MenuBlue_Click"/>
-                <MenuItem x:Name="MenuViolet" Header="Фиолетовый" Click="MenuViolet_Click"/>
-                <MenuItem x:Name="MenuOrange" Header="Оранжевый" Click="MenuOrange_Click"/>
-                <MenuItem x:Name="MenuWhite" Header="Белый" Click="MenuWhite_Click"/>
+        <Menu Background="{x:Null}" BorderThickness="1" Margin="0,0,576,383">
+            <MenuItem Header="Фон" Style="{StaticResource MI2}" Height="26" MouseMove="MenuItem_MouseMove" MouseLeave="MenuItem_MouseLeave">
+                <MenuItem x:Name="MenuRed" Style="{StaticResource MI1}" Header="Красный" Click="MenuRed_Click"/>
+                <MenuItem x:Name="MenuGreen" Style="{StaticResource MI1}" Header="Зеленый" Click="MenuGreen_Click"/>
+                <MenuItem x:Name="MenuBlue" Style="{StaticResource MI1}" Header="Синий" Click="MenuBlue_Click"/>
+                <MenuItem x:Name="MenuViolet" Style="{StaticResource MI1}" Header="Фиолетовый" Click="MenuViolet_Click"/>
+                <MenuItem x:Name="MenuOrange" Style="{StaticResource MI1}" Header="Оранжевый" Click="MenuOrange_Click"/>
+                <MenuItem x:Name="MenuWhite" Style="{StaticResource MI1}" Header="Белый" Click="MenuWhite_Click"/>
             </MenuItem>
-            <MenuItem x:Name="MenuRazr" Header="О разработчике" Click="MenuRazr_Click" Height="26" MouseMove="MenuRazr_MouseMove" MouseLeave="MenuRazr_MouseLeave">
+            <MenuItem x:Name="MenuRazr" Style="{StaticResource MI2}" Header="О разработчике" Click="MenuRazr_Click" Height="26" MouseMove="MenuRazr_MouseMove" MouseLeave="MenuRazr_MouseLeave">
             </MenuItem>
-            <MenuItem x:Name="MenuClose" Header="Закрыть" Click="MenuClose_Click" Height="26" MouseMove="MenuClose_MouseMove" MouseLeave="MenuClose_MouseLeave">
-            </MenuItem>
+            <MenuItem x:Name="MenuClose" Style="{StaticResource MI2}" Header="Закрыть" Click="MenuClose_Click" Height="26" MouseMove="MenuClose_MouseMove" MouseLeave="MenuClose_MouseLeave"/>
         </Menu>
 
         <ToolBar Margin="216,0,5,383" Background="#FFB6B6B6">
